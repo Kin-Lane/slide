@@ -151,80 +151,6 @@
         ]
       }
     },
-    "/slide/published/": {
-      "get": {
-        "summary": "published slides",
-        "description": "published slides",
-        "operationId": "getPublishedSlides",
-        "parameters": [
-          {
-            "name": "appid",
-            "in": "query",
-            "description": "your appid for accessing the slide",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "appkey",
-            "in": "query",
-            "description": "your appkey for accessing the slide",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Slide Response",
-            "schema": {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/slide"
-              }
-            }
-          }
-        },
-        "tags": [
-          "Slide"
-        ]
-      }
-    },
-    "/slide/draft/": {
-      "get": {
-        "summary": "draft slides",
-        "description": "draft slides",
-        "operationId": "getDraftSlides",
-        "parameters": [
-          {
-            "name": "appid",
-            "in": "query",
-            "description": "your appid for accessing the slide",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "appkey",
-            "in": "query",
-            "description": "your appkey for accessing the slide",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "slide response",
-            "schema": {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/slide"
-              }
-            }
-          }
-        },
-        "tags": [
-          "Slide"
-        ]
-      }
-    },
     "/slide/{slide_id}/": {
       "get": {
         "summary": "Retrieve a slide using its slug",
@@ -559,61 +485,10 @@
         ]
       }
     },
-    "/slide/tags/byweek/": {
-      "get": {
-        "summary": "slide tags by week",
-        "description": "slide tags by week",
-        "operationId": "getSlideTagsByWeek",
-        "parameters": [
-          {
-            "name": "appid",
-            "in": "query",
-            "description": "your appid for accessing the slide",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "appkey",
-            "in": "query",
-            "description": "your appkey for accessing the slide",
-            "required": true,
-            "type": "string"
-          },        
-          {
-            "name": "week",
-            "in": "query",
-            "description": "the week to retrieve tags by",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "year",
-            "in": "query",
-            "description": "the year to retrieve tags by",
-            "required": false,
-            "type": "string"
-          }          
-        ],
-        "responses": {
-          "200": {
-            "description": "Slide Tag Response",
-            "schema": {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/slide"
-              }
-            }
-          }
-        },
-        "tags": [
-          "Tags"
-        ]
-      }
-    },
-    "/slide/tags/byweek/{tag}/slide/": {
+    "/slide/tags/{tag}/slide/": {
       "get": {
         "summary": "slide tags by week slides",
-        "description":  "slide tags by week slides",
+        "description": "slide tags by week slides",
         "operationId": "getSlideTagCSlide",
         "parameters": [
           {
@@ -644,43 +519,6 @@
         },
         "tags": [
           "Tags"
-        ]
-      }
-    },
-    "/slide/byweek/": {
-      "get": {
-        "summary": "slides by week",
-        "description": "slides by week",
-        "operationId": "getSlidesByWeek",
-        "parameters": [
-          {
-            "name": "appid",
-            "in": "query",
-            "description": "your appid for accessing the slide",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "appkey",
-            "in": "query",
-            "description": "your appkey for accessing the slide",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Slide Response",
-            "schema": {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/slide"
-              }
-            }
-          }
-        },
-        "tags": [
-          "Slide"
         ]
       }
     }
