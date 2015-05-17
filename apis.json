@@ -1,7 +1,7 @@
 {
   "name": "Kin Lane - Slide",
   "description": "This is my default slide API, using it to manage posts in a single API. It is a Stack Network API resource, with supporting docker container for the API.",
-  "image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-slide-icon.png",
+  "image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-slide.png",
   "tags": [
     "application programming interface",
     "API",
@@ -15,7 +15,7 @@
     {
       "name": "Slide",
       "description": "A slide API resource.",
-      "image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-slide-icon.png",
+      "image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-slide.png",
       "humanURL": "https://kin-lane.github.io/slide/",
       "baseURL": "http://slide.api.kinlane.com",
       "tags": [
