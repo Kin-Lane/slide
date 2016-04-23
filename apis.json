@@ -1,4 +1,4 @@
-[{
+{
 	"name": "Kin Lane Slide API",
 	"description": "",
 	"image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-slide.png",
@@ -6,7 +6,7 @@
 	"tags": ["Kin Lane Slide API"],
 	"created": "2016-04-04",
 	"modified": "2016-04-04",
-	"url": "https://kin-lane.github.io/slide/"
+	"url": "https://kin-lane.github.io/slide/",
 	"specificationVersion": "0.14",
 	"apis": [{
 		"name": "Kin Lane Slide API",
@@ -117,4 +117,4 @@
 		"x-twitter": "apievangelist",
 		"email": "info@apievangelist.com"
 	}]
-}]
+}
